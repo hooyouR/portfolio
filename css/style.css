@@ -1,0 +1,561 @@
+@charset "utf-8";
+
+html { font-family: 'GmarketSansBold', 'GmarketSansMedium', 'GmarketSansLight', 'Nanum Gothic','맑은 고딕', 돋움, sans-serif;  color: #fff;}
+body { margin: 0; padding: 0; background-color: #1d2d60;}
+ul { margin: 0; padding: 0; list-style: none;}
+a { display: block; text-decoration: none; color: #fff;}
+h1, h3, p { margin: 0;}
+
+header {
+    width: 100%; height: 130px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    width: 100px; height: 100px;
+}
+header > a {
+    margin-left: 4vw;
+}
+header > a:hover {
+    animation: logo 2s linear 0s infinite;
+}
+    @keyframes logo {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+header ul {
+    display: flex;
+}
+header nav ul li a {
+    margin-right: 50px; 
+    font-size: 30px;
+}
+header a:hover {
+    color: #ffd95f;
+}
+
+
+main h1 {
+    display: block;
+    font-size: 4vw;
+    color: #ffd95f;
+    text-align: center;
+    margin-bottom: 130px;
+    letter-spacing: 5px;
+}
+main #title {
+    font-size: 5vw;
+    margin: 6.25vw 0 0 17.5vw;
+    letter-spacing: 5px;
+    line-height: 6.6vw;
+}
+
+main .divide {
+    margin: 400px 0;
+}
+main .divide div {
+    background-color: #fff;
+    width: 2px; height: 3vw;
+    margin: 0 auto;
+}
+main .divide img {
+    width: 2vw; height: 2vw;
+    display: block;
+    margin: 20px auto;
+    animation: rotation 3s linear 0s infinite;
+}
+ @keyframes rotation {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+ }
+
+main #project {
+    width: 100%;
+    overflow: hidden;
+}
+main #project .project_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 5vw;
+}
+main #project .project_wrap div p:first-child {
+    font-family: 'GmarketSansMedium';
+    font-size: 0.8vw;
+    margin: 3vw 0 0 4vw;
+}
+main #project .project_wrap h2 {
+    font-size: 3vw;
+    margin: 2vw 0 3vw 4vw;
+}
+main #project .project_wrap div p {
+    font-family: 'GmarketSansLight';
+    font-size: 2vw;
+    margin-left: 4vw;
+}
+main #project .project_wrap > div {
+    width: 33.8vw; height: 33.8vw;
+    position: relative;
+    background-color: #1d2d60;
+    border: 2px solid #ffd95f;
+}
+main #project .project_wrap > div:first-child {
+    margin-right: 5vw;
+}
+main #project .project_wrap > div:nth-child(2) {
+    margin-top: 13vw;
+    margin-bottom: 6.25vw;
+}
+main #project .project_wrap > div:nth-child(3) {
+    margin-right: 5vw;
+    margin-top: -13vw;
+}
+main #project h1::after {
+    content: "";
+    width : 98vw; height: 44vw;
+    border: 1px solid #fff;
+    border-radius: 50% / 50%;
+    transform: rotate(35deg);
+    z-index: -1;
+    position: absolute;
+    left: 0; right : 0;
+    top: 35vw;
+    margin : 0 auto;
+}
+/* 'more' animation */
+main #project .project_wrap a {
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 6vw;
+    width: 6vw; height: 6vw;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-radius: 100%;
+}
+main #project .project_wrap a:hover + .ball-holder {
+    animation: revolution 5s linear infinite;
+}
+main #project .animation {
+    position: absolute;
+    right : 3vw; bottom : 3vw;
+}
+main #project .animation .ring {
+    position: relative;
+    width: 6vw; height: 6vw;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+.ball-holder {
+    position: absolute;
+    width: 0.625vw; height: 7vw;
+    top: -0.5vw; left: 2.7vw;
+    transform: rotate(-37deg);
+}
+.ball {
+    position: absolute;
+    top: 0; left: 0;
+    width: 0.8vw; height: 0.8vw;
+    border-radius: 100%;
+    background: #fff;
+}
+main #project .project_wrap a:hover+.ball-holder {
+    animation: revolution 3s linear infinite;
+}
+
+    @keyframes revolution {
+        0% {
+            transform: rotate(-37deg);
+        }
+        100% {
+            transform: rotate(323deg);
+        }
+    }
+
+
+main #about {
+    width: 100%;
+}
+main #about h3 {
+    font-size: 2.5vw;
+    margin-top: 1.82vw; margin-left: 2.34vw;
+}
+main #about p {
+    font-family: 'GmarketSansLight';
+    font-size: 1.7vw;
+    margin-top: 75px; margin-left: 2.34vw;
+    line-height: 3vw;
+    word-break: keep-all;
+}
+main #about .about_wrap1 {
+    margin: 0 2vw;
+    display: flex;
+    justify-content: center;
+}
+main #about .about_wrap1 div {
+    width: 27.5vw; height: 27.5vw;
+    background-color: #1d2d60;
+    border: 2px solid #ffd95f;
+}
+main #about .about_wrap1 div:first-child {
+    margin-top: 13vw; margin-right: 2vw;
+    position: relative;
+}
+main #about h1 {
+    position: relative;
+}
+main #about h1::after {
+    content: "";
+    width : 72vw; height: 30vw;
+    border: 1px solid #fff;
+    border-radius: 50% / 50%;
+    transform: rotate(-15deg);
+    z-index: -1;
+    position: absolute;
+    top : 17vw; left: 13vw; 
+    margin: 0 auto;
+}
+
+main #about .about_wrap2 {
+    margin: 5vw 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+main #about .about_wrap2 div {
+    width: 27.5vw; height: 27.5vw;
+    background-color: #1d2d60;
+    border: 2px solid #ffd95f;
+}
+main #about .about_wrap2 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+main #about .about_wrap2 li {
+    font-family: 'GmarketSansLight';
+    font-size: 1.7vw;
+    line-height: 3vw;
+}
+main #about .about_wrap2 li img {
+    width: 20px; height: 20px;
+    margin-right: 1.3vw; 
+}
+main #about .about_wrap2 div:first-child {
+    position: relative;
+}
+main #about .about_wrap2 div:first-child ul {
+    flex-direction: column;
+}
+main #about .about_wrap2 div:first-child li:first-child {
+    margin: 1.82vw 0 0 2.34vw;
+}
+main #about .about_wrap2 div:first-child li:nth-child(2) {
+    margin: 1.5vw 0 0 2.34vw;
+}
+main #about .about_wrap2 div:last-child li {
+    background-color: #1d2d60;
+    height: 9vw; 
+    text-align: center;
+    z-index: 99;
+}
+main #about .about_wrap2 div:last-child img {
+    width: 4.6vw; height: 4.6vw;
+    margin: 0 auto;
+    background-color: #1d2d60;
+}
+main #about .about_wrap2 div:last-child {
+    margin-top: 13vw; margin-left: 2vw;
+    position: relative;
+}
+main #about .about_wrap2 div:last-child li:first-child {
+    margin: -1vw 10.3vw 3.3vw 10.3vw;
+}
+main #about .about_wrap2 div:last-child li:nth-child(2) {
+    margin-left: 5vw; margin-top: 2.2vw;
+}
+main #about .about_wrap2 div:last-child li:last-child {
+    margin-left: 7vw; margin-top: 2.2vw;
+}
+main #about .about_wrap2 div:last-child::before {
+    content: "";
+    width: 15.6vw; height: 15.6vw;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom : 4vw;
+    left : 0; right: 0;
+    margin : 0 auto;
+    z-index: 9;
+}
+main #about h2 {
+    margin: auto 0;
+    position: relative;
+    font-size: 0;
+}
+main #about h2::after {
+    content: "";
+    width : 72vw; height: 30vw;
+    border: 1px solid #fff;
+    border-radius: 50% / 50%;
+    transform: rotate(15deg);
+    z-index: -1;
+    position: absolute;
+    left : 13vw; top : 9vw;
+}
+
+main #skill {
+    width: 100%;
+    overflow: hidden;
+}
+main #skill h1 {
+    position: relative;
+}
+main #skill h1::after {
+    content: "";
+    width : 95vw; height: 39vw;
+    border: 1px solid #fff;
+    border-radius: 50% / 50%;
+    transform: rotate(-35deg);
+    z-index: -1;
+    position: absolute;
+    left: 0; right:0;
+    top : 32vw;
+    margin : 0 auto;
+}
+main #skill .skill_wrap {
+    margin: 0 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main #skill .skill_wrap div {
+    width: 30vw; height: 30vw;
+    background-color: #1d2d60;
+    border: 2px solid #ffd95f;
+    z-index: 1;
+}
+main #skill .skill_wrap div:nth-child(2n) {
+    margin-left: 6.25vw;
+}
+main #skill .skill_wrap div:first-child {
+    margin-top: 17vw;
+    position: relative;
+}
+main #skill .skill_wrap div:nth-child(3) {
+    margin-top: 6.25vw;
+}
+main #skill .skill_wrap div:nth-child(4) {
+    margin-top: -10.9vw;
+}
+main #skill h3 {
+    font-size: 2.6vw;
+    margin-top: 1.8vw; margin-left: 2.3vw;
+}
+main #skill li {
+    font-family: 'GmarketSansLight';
+    font-size: 1.8vw;
+    line-height: 3vw;
+    margin-bottom: 1vw;
+}
+main #skill li img {
+    width: 20px; height: 20px;
+    margin-right: 1.3vw; 
+}
+main #skill li span {
+    padding-left: 75px;
+}
+main #skill .skill_wrap ul {
+    margin-left: 2vw;
+}
+main #skill .skill_wrap div:first-child ul {
+    margin-top: 5.2vw; 
+}
+main #skill .skill_wrap div:nth-child(2) ul {
+    margin-top: 30px;
+}
+main #skill .skill_wrap div:nth-child(3) ul {
+    margin-top: 5.2vw;
+}
+main #skill .skill_wrap div:nth-child(4) ul {
+    margin-top: 80px;
+}
+
+
+main #contact {
+    width: 100%;
+    margin-top: 500px;
+}
+main #contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 755px; height: 130px;
+    border: 2px solid #fff;
+    margin: 0 auto;
+    font-family: 'GmarketSansMedium';
+    font-size: 25px;
+    text-align: center;
+}
+main #contact a span {
+    font-family: 'GmarketSansBold';
+}
+main #contact a img {
+    width: 30px; height: 30px;
+    margin-top: 5px;
+    margin: 0 50px;
+}
+main #contact a:hover {
+    border: 2px solid #ffd95f;
+}
+main #contact a:hover img {
+    animation: rotation 2s linear 0s infinite;
+}
+
+
+footer {
+    width: 100%;
+    margin-top: 20vw;
+}
+footer div:first-child {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex;
+}
+footer .footerlogo {
+    width: 70px; height: 70px;
+}
+footer div > a:first-child {
+    margin: 10px 0 10px 15vw;
+}
+footer div > a:first-child:hover {
+    animation: logo 2s linear infinite;
+}
+footer .top {
+    display: flex;
+    align-items: center;
+    width: 200px; height: 50px;
+    margin: auto auto;
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+}
+footer .top img {
+    margin-right: 15px;
+}
+footer .top:hover {
+    color: #ffd95f;
+}
+footer ul {
+    width: 13.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5vw;
+}
+footer ul a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'GmarketSansMedium';
+    width: 4vw; height: 30px;
+}
+footer ul a:hover {
+    color: #ffd95f;
+}
+footer p {
+    font-family: 'GmarketSansMedium';
+    text-align: center;
+    padding: 10px 0; 
+}
+
+/* text-animation */
+.block-reveal {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+}
+/* span */
+.block-reveal > .text_animation {
+    -webkit-animation: show-text calc(var(--reveal-speed, 0.5) * 1s) calc(var(--delay) * 1s) steps(1) both;
+            animation: show-text calc(var(--reveal-speed, 0.5) * 1s) calc(var(--delay) * 1s) steps(1) both;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+  }
+/* strong */
+.block-reveal > .text_animation > strong{
+    -webkit-animation: show-text2 calc(var(--reveal-speed, 0.5) * 1s) calc(var(--delay) * 1s) steps(1) both;
+            animation: show-text2 calc(var(--reveal-speed, 0.5) * 1s) calc(var(--delay) * 1s) steps(1) both;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+}
+.block-reveal > .text_animation:after {
+    content: '';
+    top: 0; bottom: 0;
+    right: 0; left: 0;   
+    background: var(--color, #1e90ff);
+    position: absolute;
+    -webkit-animation: block-reveal calc(var(--reveal-speed, 0.5) * 1s) calc(var(--delay) * 1s) both;
+            animation: block-reveal calc(var(--reveal-speed, 0.5) * 1s) calc(var(--delay) * 1s) both;
+}
+/* 그려지는 블록 관련 애니메이션 */
+    @keyframes block-reveal {
+        0% {
+            -webkit-transform: translate(0, -110%);
+            transform: translate(0, -110%);
+        }
+        45%, 55% {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+        100% {
+            -webkit-transform: translate(0, 110%);
+            transform: translate(0, 110%);
+        }
+}
+/* 일반 폰트 부분 */
+    @-webkit-keyframes show-text {
+        0% {
+            color: transparent;
+        }
+        50%, 100% {
+            color: #fff;
+        }
+    }
+    @keyframes show-text {
+        0% {
+            color: transparent;
+        }
+        50%, 100% {
+            color: #fff;
+        }
+    }
+/* strong부분(강조부분 관련) */
+    @-webkit-keyframes show-text2 {
+        0% {
+            color: transparent;
+        }
+        50%, 100% {
+            color: #ffd95f;
+        }
+    }
+    @keyframes show-text2 {
+        0% {
+            color: transparent;
+        }
+        50%, 100% {
+            color: #ffd95f;
+         }
+    }
+  

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>projet 1 : LANXESS Webmagazine</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<link rel="stylesheet" href="css/common/normalize.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/project1.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="title">                
+                <div>
+                    <p class="category" data-aos="fade-in" data-aos-delay="80" data-aos-duration="2000">Web - UI/UX Redesign</p>
+                    <div class="block-reveal" style="--reveal-speed: 0.8;">
+                        <span class = "text_animation" style="--delay: 0.2; --color: #ffd95f;">Webmagazine</span>
+                        <h1 class = "text_animation" style="--delay: 0.8; --color: #ffd95f;">LANXESS</h1>
+                    </div>                    
+                    <p>화학기업 LANXESS의 혁신 제품과 기술이 삶의 질 향상에 기여한 사례를 소개하는 웹 사이트</p>
+                </div>
+                <div class="image">
+                    <img src="images/Macbook.png">
+                </div>
+            </section>
+            <section id="introduction">
+                <h2 data-aos="fade-up">I. &nbsp;소개</h2>
+                <ul class="features"  data-aos="fade-up">
+                    <li><img src="images/twinkle_w.svg">반응형 웹</li>
+                    <li><img src="images/twinkle_w.svg">mediaQueries</li>
+                    <li><img src="images/twinkle_w.svg">mobileFirst</li>
+                    <li><img src="images/twinkle_w.svg">UI/UX</li>
+                    <li><img src="images/twinkle_w.svg">리디자인</li>
+                </ul>
+                <div class="info_wrap" data-aos="fade-up">
+                    <div>
+                        <h5>DATE</h5>
+                        <p>2021 / 7~8</p>
+                    </div>
+                    <div>
+                        <h5>DURATION</h5>
+                        <p>3주</p>
+                    </div>
+                    <div>
+                        <h5>VIEWPORT</h5>
+                        <p>Mobile : 375 &nbsp;/&nbsp; Tablet : 768 &nbsp;/&nbsp; PC : 1280 이상</p>
+                    </div>
+                </div>
+            </section>
+            <section id="process">
+                <h2 data-aos="fade-up">II. &nbsp;문제 & 해결</h2>
+                <!-- UI/UX -->
+                <h3 data-aos="fade-up">UI/UX</h3>
+                <div class="boxwrap" data-aos="fade-up"> 
+                    <h4>부족한 메인 컨텐츠</h4>
+                    <div class="flexwrap">
+                        <ul class="problem">
+                            <li><img src="images/twinkle_w.svg">단 3개만 보여지는 컨텐츠</li>
+                            <li><img src="images/twinkle_w.svg">한 메뉴의 컨텐츠만 보여짐</li>
+                        </ul>
+                        <img src="images/left_arrow.png" id="arrow">
+                        <ul class="solution">
+                            <li><img src="images/twinkle_w.svg">메뉴 당 9개씩 총 18개의 컨텐츠 배치</li>
+                            <li><img src="images/twinkle_w.svg">딱딱하지 않은 느낌을 주기 위해 컨텐츠의 위치를 교차하여 배치</li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="boxwrap" data-aos="fade-up">
+                    <h4>이미지 소스 부족</h4>
+                    <div class="flexwrap">
+                        <ul class="problem">
+                            <li><img src="images/twinkle_w.svg">컨텐츠를 보충하면서 썸네일 이미지 소스 부족</li>
+                            <li><img src="images/twinkle_w.svg">내용이 똑같은 배너를 바꾸기 위한 이미지 소스 부족</li>
+                        </ul>
+                        <img src="images/left_arrow.png" id="arrow">
+                        <ul class="solution">
+                            <li><img src="images/twinkle_w.svg">이미지 배포 사이트를 통해 각 컨텐츠에 맞는 이미지 적용</li>
+                            <li><img src="images/twinkle_w.svg">본사 홈페이지에서 배너의 내용과 이미지 소스 탐색 및 적용</li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="boxwrap" data-aos="fade-up">
+                    <h4>푸터에 과다한 컨텐츠 배치</h4>
+                    <div class="flexwrap">
+                        <ul class="problem">
+                            <li><img src="images/twinkle_w.svg">소셜미디어, 약관, 카테고리 등 과다하게 배치</li>
+                        </ul>
+                        <img src="images/left_arrow.png" id="arrow">
+                        <ul class="solution">
+                            <li><img src="images/twinkle_w.svg">카테고리는 메뉴 안으로 옮기고 약관은 간소화하여 배치</li>
+                            <li><img src="images/twinkle_w.svg">소셜미디어 부분은 어울리는 아이콘으로 배치</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- publishing -->
+                <h3 data-aos="fade-up">Publishing</h3>
+                <div class="publishing" data-aos="fade-up">
+                    <ul>
+                        <li><img src="images/twinkle_w.svg">레이아웃 작성 시 grid로 작업하여 본래 의도대로 컨텐츠 배치 불가</li>
+                        <li>&rarr;	flex로 변경하여 교차하여 정렬 가능</li>
+                        <li><img src="images/twinkle_w.svg">viewport 값이 줄어들면서 레이아웃이 무너짐</li>
+                        <li>&rarr;	여백의 단위를 px(고정값)이 아닌 vw, vh로 적용</li>
+                        <li><img src="images/twinkle_w.svg">header를 고정시키면서(fixed) 바로 밑에 위치한 배너와 틈이 생김</li>
+                        <li>&rarr;	body에 header의 높이만큼 padding값을 주어 해결</li>
+                        <li><img src="images/twinkle_w.svg">viewport 값이 달라지면서 배너의 이미지 크기도 달라짐</li>
+                        <li>&rarr;	background의 cover 값을 이용해 해결</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="design">
+                <h2 data-aos="fade-up">III. &nbsp;디자인</h2>
+                <div class="design_wrap">
+                    <div data-aos="fade-up">
+                        <h3>Keyword</h3>
+                        <ul>
+                            <li><img src="images/twinkle_w.svg">깔끔한</li>
+                            <li><img src="images/twinkle_w.svg">세련된</li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-up">
+                        <h3>Color</h3>
+                        <div class="color_wrap">
+                            <div class="circle_wrap">
+                                <div class="circle"></div>
+                                <p>#000</p>
+                            </div>
+                            <div class="circle_wrap">
+                                <div class="circle"></div>
+                                <p>#f4f4f4</p>
+                            </div>
+                            <div class="circle_wrap">
+                                <div class="circle"></div>
+                                <p>#30436a</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div data-aos="fade-up">
+                        <h3>Font</h3>
+                        <ul>
+                            <li>KOR</li>
+                            <li>Noto Sans KR</li>
+                            <li>랑세스 코리아 웹매거진</li>
+                            <li>ENG</li>
+                            <li>Open Sans Condensed</li>
+                            <li>LANXESS Korea Webmagazine</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="site">
+                <a href="#" target="blank">사이트 보러가기</a>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <a href="index.html"><img src="images/logo.svg" alt="logo" class="footerlogo"></a>
+                <a href="#" class="top"><img src="images/top_arrow.svg" alt="arrow">BACK TO TOP</a>
+                <ul>
+                    <li><a href="#">Dribble</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>HYELIN KANG 2021 - ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
